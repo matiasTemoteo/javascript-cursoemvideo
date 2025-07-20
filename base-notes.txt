@@ -81,4 +81,11 @@ História do Javascript:
    desktop, etc.
    
    
+Requisitos Mínimos para os estudos de Javascript:
 
+ - Um navegador (recomendado o Google Chrome).
+
+ - Um editor de texto e código (recomendado o VsCode).
+
+ - Node js - Para facilitar a execução do Js fora do Nevegador
+   dentro do VsCode.
