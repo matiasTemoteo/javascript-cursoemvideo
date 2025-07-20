@@ -1,0 +1,62 @@
+Variáveis em Javascript:
+
+ Espaços de memória que podem ser definidos e nomeados,
+ para armazenarem dados durante a execução do programa.
+ Variáveis podem ser alteradas e podem ser de vários tipos
+ diferentes. no Javascript, não existe tipagem solida, então
+ as variáveis ao serem declaradas uma única vez, podem assumir
+ ao longo da execução do programa, diversos tipos diferentes.
+
+ Declaração:
+
+ - 'var': Declara uma variável. Deve ser seguida do nome
+   a ser dado para a variável.
+
+ - '=': Sinal de atribuição, usado para atribuir um valor
+   a uma variável, sempre da direita para a esquerda.
+
+ Regras ao nomear variáveis:
+  
+  - Podem começar com letras, '$' ou '_'.
+  - Não podem começar com números, mas podem ter números.
+  - É possível usar acentos e símbolos.
+  - Não podem conter espaços.
+  - Não podem ser palavras reservadas.
+
+ Dicas para nomear variáveis:
+
+  - Maiúsculas e minúsculas fazem diferença.
+  - Utilize nomes coerentes para as variáveis.
+
+
+Tipos de dados:
+
+ - 'number': Números, sendo números inteiros ou reais,
+   positivos ou negativos.
+
+     - 'Infinity': Número grande demais para o Javscript
+        processar.
+
+     - 'NaN': Valor que não considerado um número de fato.
+
+ - 'string': Cadeias de caracteres (textos), sendo obrigatório
+   o uso de aspas ('', "" ou ``) para envolver o texto. O texto
+   pode ser constituído de caracteres alfanuméricos, símbolos e
+   acentos.
+
+ - 'boolean': Tipos lógicos (verdadeiro ou falso), sendo:
+    'true' ou 'false'.
+
+ - 'object': Dados do tipo objeto, que possuem uma estrutura
+   de dados (arrays, objects, json). Obs: O tipo
+   null pode ser considerado um objeto.
+
+ - 'function': Funções, no Javascript, funções podem ser
+   armazenadas em variáveis.
+
+ - 'null': Tipo nulo, tipo usado para deixar uma variável
+   'vazia'.
+
+ - 'undefined': Valor não existente, não definido, diferente
+   do nulo, não é um valor real, mas sim a falta de um valor
+   definido para a variável.
