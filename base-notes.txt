@@ -18,9 +18,9 @@ História do Javascript:
    por prevenção contra possíveis avanços da União
    Soviética contra os Estados Únidos, a antiga
    ARPA foi renomeada para DARPA focando seus esforços
-   em defesa e redundancia de dados, solidifcando os
-   conceitos de redes e dandos os primeiros passos para
-   a criação da Internet.
+   em defesa e redundância de dados, solidifcando os
+   conceitos de redes de computadores e dandos os
+   primeiros passos para a criação da Internet.
 
  - Em 1993, Tim Bernes Lee, foi os responsável pela criação
    da linguagem HTML e o protocolo HTTP, de forma que logo
@@ -31,11 +31,11 @@ História do Javascript:
    Jim Clark da Silicon Graphics, onde fundaram a Netscape
    e criaram o navegador de mesmo nome.
 
- - Em 1995, um programador da Silcion Graphics, chamado
-   Brendan Nike, entrou na Netscape, com o objetivo de criar
-   uma linguagem para manipular e melhorar o HTML, inicalmente
-   chamada MOCA, que depois foi atualizado para LiveScript.
-   No mesmo perído, um outra linguagem surgia na empresa
+ - Em 1995, um programador da Silicon Graphics, chamado
+   Brendan Eich, entrou na Netscape, com o objetivo de criar
+   uma linguagem para manipular e dinamizar o HTML, inicalmente
+   chamada MOCA, que depois foi atualizada para LiveScript.
+   No mesmo perído, uma outra linguagem surgia na empresa
    Sun Microsystem, seu nome era Java, e logo após a sua criação,
    já chamava muita atenção e fazia muito sucesso na mídia e 
    entre os desenvolvedores da época. Para aproveitar a fama do
@@ -47,7 +47,7 @@ História do Javascript:
    uma gigante da tecnologia, a Microsoft. A Microsoft usando
    o código do antigo Masaic, adiquirido por eles em negociações
    anteriores, criou o seu navegador chamado Internet Explorer
-   que foi lançcado junto ao Windows 95, a então mais atual
+   que foi lançado junto ao Windows 95, a então mais atual
    versão do famoso sistema operacional da gigante da tecnologia.
    A Microsoft então se baseando no Javascript, decidiu criar sua
    propria linguagem que seria lançada junto ao Internet Explorer
@@ -56,22 +56,22 @@ História do Javascript:
    linguagem, principalmente encorajada pelos problemas com a 
    Microsoft e sua cópia do Javascript. Em 1997, Ela procurou
    a empresa europeia ECMA de padornizações para criar a 
-   padronização do Javascript, onde surgiu então o Ecmascript.
+   padronização do Javascript o que deu origem ao Ecmascript.
   
  - Em meados de 2002, o navegador Netscape estava perdendo espaço
    para o Internet Explorer, por conta da facilidade de obtenção
    e integração com o Sistema operacional Windows. A Netscape
    acabou falindo, mas alguns membros  acabaram continuando
-   e criaram a fundação Mozila, continuaram focando no ramo de
+   e criaram a fundação Mozila e continuaram focando no ramo de
    navegadores. Eles utilizando o antigo Netscape, juntamente com
-   alguns remnescentes de projetos internos, criaram então um
+   alguns remanescentes de projetos internos, criaram então um
    novo navegador que recebeu o nome de Firefox.
 
- - Em 2008, a Google então entrou no mundo dos navegadores e criou
+ - Em 2008, a Google também entrou no mundo dos navegadores e criou
    seu proprio navegador, o Google Chrome, que em pouco tempo se
-   tornou o mais usado no mundo deixando as concorrentes para trás.
+   tornou o mais usado no mundo, deixando as concorrentes para trás.
    O Google Chrome em 2009 trouxe um poderoso motor de execução de
-   Javascript, chamado de V8, tendo como uma das suas principais
+   Javascript, chamado V8, tendo como uma das suas principais
    vantagens, gerar códigos JIT (Just in Time). Um ano depois, em
    2010, se aproveitando do fato do V8 ser uma tecnologia de código
    aberto, um grupo de desenvolvedores criaram uma versão externa do
