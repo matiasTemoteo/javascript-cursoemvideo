@@ -1,0 +1,84 @@
+Cliente Servidor:
+
+Cliente: Dispositivo que acessa um conteúdo na internet.
+
+  - HTML - Conteúdo, texto, mídia e estrutura.
+  - CSS - Design, estilização, cores, fontes e responsividade.
+  - JS - Interações, eventos, integração e segurança.
+
+
+Servidor: Computador que mantém o conteúdo, códigos e
+  infraestrutura capaz de servir o respectivo conteúdo na internet
+  tornando o disponível para os clientes.
+
+
+História do Javascript:
+
+ - Em meádos da Década de 1970, no meio da Guerra Fria,
+   por prevenção contra possíveis avanços da União
+   Soviética contra os Estados Únidos, a antiga
+   ARPA foi renomeada para DARPA focando seus esforços
+   em defesa e redundancia de dados, solidifcando os
+   conceitos de redes e dandos os primeiros passos para
+   a criação da Internet.
+
+ - Em 1993, Tim Bernes Lee, foi os responsável pela criação
+   da linguagem HTML e o protocolo HTTP, de forma que logo
+   depois foi fundada a World Wide Web (WWW). Surgia nesse
+   mesmo momento o Mosaic, o primeiro navegador web para
+   lidar com HTML e o protocolo HTTP, criado po Marc
+   Andreessen na NCSA. Ao sair da NCSA, Mark se juntou com
+   Jim Clark da Silicon Graphics, onde fundaram a Netscape
+   e criaram o navegador de mesmo nome.
+
+ - Em 1995, um programador da Silcion Graphics, chamado
+   Brendan Nike, entrou na Netscape, com o objetivo de criar
+   uma linguagem para manipular e melhorar o HTML, inicalmente
+   chamada MOCA, que depois foi atualizado para LiveScript.
+   No mesmo perído, um outra linguagem surgia na empresa
+   Sun Microsystem, seu nome era Java, e logo após a sua criação,
+   já chamava muita atenção e fazia muito sucesso na mídia e 
+   entre os desenvolvedores da época. Para aproveitar a fama do
+   nome Java, a Netscape mudou então o nome de sua linguagem de
+   LiveScript para JavaScript.
+
+ - O JavaScript se tornou uma linguagem de bastante sucesso já
+   nos seus primeiros anos de vida e chamou a atenção de
+   uma gigante da tecnologia, a Microsoft. A Microsoft usando
+   o código do antigo Masaic, adiquirido por eles em negociações
+   anteriores, criou o seu navegador chamado Internet Explorer
+   que foi lançcado junto ao Windows 95, a então mais atual
+   versão do famoso sistema operacional da gigante da tecnologia.
+   A Microsoft então se baseando no Javascript, decidiu criar sua
+   propria linguagem que seria lançada junto ao Internet Explorer
+   e seu nome seria JScript. A Netscape decidiu então padronizar
+   sua linguagem para evitar futuros problemas de cópias de sua
+   linguagem, principalmente encorajada pelos problemas com a 
+   Microsoft e sua cópia do Javascript. Em 1997, Ela procurou
+   a empresa europeia ECMA de padornizações para criar a 
+   padronização do Javascript, onde surgiu então o Ecmascript.
+  
+ - Em meados de 2002, o navegador Netscape estava perdendo espaço
+   para o Internet Explorer, por conta da facilidade de obtenção
+   e integração com o Sistema operacional Windows. A Netscape
+   acabou falindo, mas alguns membros  acabaram continuando
+   e criaram a fundação Mozila, continuaram focando no ramo de
+   navegadores. Eles utilizando o antigo Netscape, juntamente com
+   alguns remnescentes de projetos internos, criaram então um
+   novo navegador que recebeu o nome de Firefox.
+
+ - Em 2008, a Google então entrou no mundo dos navegadores e criou
+   seu proprio navegador, o Google Chrome, que em pouco tempo se
+   tornou o mais usado no mundo deixando as concorrentes para trás.
+   O Google Chrome em 2009 trouxe um poderoso motor de execução de
+   Javascript, chamado de V8, tendo como uma das suas principais
+   vantagens, gerar códigos JIT (Just in Time). Um ano depois, em
+   2010, se aproveitando do fato do V8 ser uma tecnologia de código
+   aberto, um grupo de desenvolvedores criaram uma versão externa do
+   V8 que poderia rodar o Javascript fora dos navegadores, assim
+   surgiu o Node.js, o que ampliou ainda mais o mundo do Javascript,
+   permitindo que ele atuasse no cliente, no servidor, em ambiente
+   desktop, etc.
+   
+   
+
