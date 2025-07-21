@@ -1,23 +1,28 @@
 Window:
 
  The main instance of the Web Page while being
- executed by Browser. Inside window, we have the
- 'document', that is the HTML document itself and
- by that, it's possible to access many atributes and
- methods to manipulate HTML and CSS.
+ executed by Browser.
+ 
+ Some methods and properties from window:
 
- Some methods from document:
+   - document: Inside window, we have the 'document',
+    that is the HTML document itself and by that,
+    it's possible to access many atributes and
+    methods to manipulate HTML and CSS.
 
-   - 'alert': Open a alert panel in browser window,
+   - 'alert()': Open a alert panel in browser window,
     interactable to users.
 
-   - 'confirm': Open a confirmation panel, with
+   - 'confirm()': Open a confirmation panel, with
      options, like 'ok' or 'cancel'.
 
-   - 'prompt': Open a interactable panel with input
+   - 'prompt()': Open a interactable panel with input
      text field, when user can enter data.
 
-   - 'write': Add a new line directly in the HTML body,
+
+ Some methods and properties from document:
+
+   - 'write()': Add a new line directly in the HTML body,
    after the already existent content there.
 
 
