@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Third Code</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+        }
+
+        h1, p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding: 5px 100px;
+            text-align: justify;
+            line-height: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum two numbers recived by prompts</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ea accusantium in natus aliquam consectetur debitis, nulla, impedit itaque, ipsum maiores sapiente? Voluptas cumque dicta, facere nesciunt minus numquam odit.
+    </p>
+    <script>
+        var n1 = window.prompt('Type in a number:');
+        var n2 = window.prompt('Type in another number:');
+        var sum = Number.parseFloat(n1) + Number(n2);
+
+        /*
+           Interpolating strings using '+' oeperator. 
+        */
+        window.alert(
+            'The sum between ' + n1 + ' and ' + n2
+            + ' is: ' + sum
+        );
+
+        // or
+
+        /*
+            Interpolating strings using Template String: ${}.
+            Only work when used inside (``).
+        */
+        window.alert(`The sum between ${n1} and ${n2} is ${sum}`);
+    </script>
+</body>
+</html>
