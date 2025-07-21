@@ -358,3 +358,41 @@ Funções:
 
    action();
    action2(5);
+
+
+Condições:
+
+ São estruturas dentro do código que definem o fluxo de
+ execução das instruções do código.
+ 
+ Uma estrutura condicional se baseia em valores lógicos (boolean) 
+ para definir um desvio condicional que define que um bloco de 
+ código será ou não executado ou qual bloco de código será
+ executado.
+
+ A primeira estrutura condicional é o 'if', que desvia o fluxo
+ para o bloco de código primário quando a condição for
+ atendida (valo lógico true).
+ 
+ Se a condição não for atendida, o bloco de código não será executado.
+ Nesse caso o fluxo pode seguir para os próximos processos, ou pode
+ desviar para uma outra estrutura, que é o 'else'. O else quando
+ definido, desviará o fluxo de código para outro bloco quando a
+ condição do 'if' não for satisfeita, ou seja, o seu bloco de código
+ será executado quando o valor lógico for false.
+
+ Exemplo:
+
+ * if('condição') {
+    'bloco de código' - executado quando condição for true.
+   }
+   'fluxo normal do programa'.
+
+ * if('condição) {
+    'bloco de código' - Executado quando condição for true.
+   } else {
+    'bloco de código' - executado quando condição for false.
+   }
+   'fluxo normal do programa'.
+
+
