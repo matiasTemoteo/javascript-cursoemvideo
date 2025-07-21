@@ -24,6 +24,12 @@
     </style>
 </head>
 <body>
+    <!--
+        It is possible call DOM events in HTML and indicated a
+        action to be triggered when the events was actioned.
+
+        One of the most commom actions is to trigger a function.
+    -->
     <div id="area"
         onclick="clicking()"
         onmouseenter="entered()"
@@ -36,13 +42,23 @@
         Interact!
     </div>
     <script>
-
+        /*
+            Using the method 'addEventListener()' it is
+            possible add a listener to a HTML element,
+            indicating which event must be watched and
+            what function must be called when it was actioned.
+        */
         var div2 = window.document.getElementById('area2');
         div2.addEventListener('click', clicking2);
         div2.addEventListener('mouseenter', entered2);
         div2.addEventListener('mouseout', exited2);
 
 
+        /*
+            The functions indicated in the events, must be
+            created or be available in the same file/scope
+            where the HTML events are being configured.
+        */
         function clicking() {
             var div = window.document.getElementById('area');
             div.innerHTML = 'Clicked';
