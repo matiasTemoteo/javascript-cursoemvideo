@@ -1,0 +1,102 @@
+Document Object Model (DOM)
+
+ Conjunto de objetos dentro do navegador, para acessar
+ internamente os componentes de um website.
+
+ Arvore DOM:
+
+  # window
+
+     * location
+
+         ...
+
+     * document
+
+         @ html
+    
+             - head
+
+                 - meta
+
+                 - title
+
+                 ...
+
+             - body
+
+                 - h1
+
+                 - p
+
+                 - div
+
+                 ...
+
+     * history
+
+         ...
+
+
+ Acessando elementos da arvore DOM
+
+  - 'getElementsByTagName()': Acessa elementos usando a tag-name
+    como base. Retorna sempre uma lista de elementos.
+
+     Exemplos:
+
+       - 'window.document.getElementsByTagName('p');' - Encontra
+         e retorna uma lista de paragráfos do HTML.
+
+  - 'getElementByName()': Acessa elementos usando o name como base.
+     Retorna sempre um único elemento.
+
+     Exemplos:
+
+       - 'window.document.getElementByName('div1');' - encontra
+       e retorna o elemento com nome 'div1'.
+
+
+  - 'getElementById()': Acessa elementos usando o id como base.
+     Retorna um único elemento.
+
+     Exemplos:
+
+       - 'window.document.getElementsById('msg');' - Encontra
+       e retorna o objeto html que tenha o id 'msg'.
+
+  - 'getElementByClassName()': Acessa elementos usando o class
+    name como base. Retorna sempre uma lista de elementos.
+
+     Exemplos:
+
+       - 'window.document.getElementsByClassName('text');' -
+       Encontra e retorna a lista de elementos que tenha a
+       classe 'text'.
+
+
+  - 'querySelector()': Acessa elementos usando uma query como
+    base, onde os elementos que satisfazem a query são retornados
+    pela busca. O modelo de query funciona de maneira similar ao
+    usado dentro de CSSs. A query retorna sempre o primeiro
+    elemento encontrado.
+
+     Exemplos:
+
+       - 'window.document.querySelector("div#txt1");' - Encontra
+       e retorna a div que possua o id 'txt1'.
+
+       - 'window.document.querySelector("div.text");' - encontra
+       e retorna a primeira div que possua a classe 'text'.
+
+
+  - 'querySelectorAll()': Funciona exatamente como o querySelector(),
+    porém, retorna todos os elementos encontrados que satisfaçãm a
+    query. Sendo assim, retorna uma lista de elementos.
+
+     Exemplos:
+
+       - 'window.document.querySelector("div.text");' - encontra
+       e retorna todas as divs que possuam a classe 'text'.
+
+  
