@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Second Code</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+        }
+
+        h1, p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            padding: 5px 100px;
+            text-align: justify;
+            line-height: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Receiving data from Prompts</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ea accusantium in natus aliquam consectetur debitis, nulla, impedit itaque, ipsum maiores sapiente? Voluptas cumque dicta, facere nesciunt minus numquam odit.
+    </p>
+    <script>
+        /*
+            Ao utilizar o sinal '=' é possível atribuir um valor a uma
+            variável, e nesse caso é possível receber o valor digitado no
+            prompt e atribuí-lo à variável name (inclusive é possível declarar
+            e atribuir na mesma sentença).
+        */
+        var name = window.prompt('What is your name?');
+
+        /*
+            Ao utilizar o sinal '+' em strings (seja variável ou texto direto), é
+            possível concatenar os respectivos valores em strings, formando
+            um único valor valor final.
+        */
+        window.alert('Hello ' + name);
+    </script>
+</body>
+</html>
