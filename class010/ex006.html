@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#area {
+            background-color: lightgreen;
+        }
+
+        div#area2 {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"
+        onclick="clicking()"
+        onmouseenter="entered()"
+        onmouseout="exited()"
+    >
+        Interact!
+    </div>
+
+    <div id="area2">
+        Interact!
+    </div>
+    <script>
+
+        var div2 = window.document.getElementById('area2');
+        div2.addEventListener('click', clicking2);
+        div2.addEventListener('mouseenter', entered2);
+        div2.addEventListener('mouseout', exited2);
+
+
+        function clicking() {
+            var div = window.document.getElementById('area');
+            div.innerHTML = 'Clicked';
+            div.style.opacity = '50%';
+        }
+
+        function entered() {
+            var div = window.document.getElementById('area');
+            div.innerHTML = 'Entered';
+        }
+
+        function exited() {
+            var div = window.document.querySelector('div#area');
+            div.innerText = 'Exited';
+        }
+
+
+        function clicking2() {
+            var div = window.document.getElementById('area2');
+            div.innerHTML = 'Clicked';
+            div.style.opacity = '50%';
+        }
+
+        function entered2() {
+            var div = window.document.getElementById('area2');
+            div.innerHTML = 'Entered';
+        }
+
+        function exited2() {
+            var div = window.document.querySelector('div#area2');
+            div.innerText = 'Exited';
+        }
+    </script>
+</body>
+</html>
