@@ -1,3 +1,26 @@
+Window:
+
+ The main instance of the Web Page while being
+ executed by Browser. Inside window, we have the
+ 'document', that is the HTML document itself and
+ by that, it's possible to access many atributes and
+ methods to manipulate HTML and CSS.
+
+ Some methods from document:
+
+   - 'alert': Open a alert panel in browser window,
+    interactable to users.
+
+   - 'confirm': Open a confirmation panel, with
+     options, like 'ok' or 'cancel'.
+
+   - 'prompt': Open a interactable panel with input
+     text field, when user can enter data.
+
+   - 'write': Add a new line directly in the HTML body,
+   after the already existent content there.
+
+
 Variáveis em Javascript:
 
  Espaços de memória que podem ser definidos e nomeados,
@@ -60,3 +83,66 @@ Tipos de dados:
  - 'undefined': Valor não existente, não definido, diferente
    do nulo, não é um valor real, mas sim a falta de um valor
    definido para a variável.
+
+
+Manipulando variaveis:
+
+ Strings:
+
+  - '+': Concatenação entre strings, o conteúdo anterior e posterior ao sinal '+'
+    serão aglutinados em uma mesma sentença ou em uma mesma variável.
+
+  - '${}': É possível usar um facilitador para concatenação de strings,
+    quando se é necessário interpolar as strings (concatenar entre
+    duas strings). Essa técnica é o template string, e para se usar,
+    é necessário a string estar entre crase (``).
+
+ Numbers:
+
+  - '+': Suma entre dois números, precisa que ambos os valores
+    (antes e depois do sinal) seja numéricos, se apenas um deles
+    for string, será feita uma operação de concatenação.
+
+
+Coversão de Valores:
+
+ Numbers:
+
+  A Classe Number pode ser utilizada para conversão de tipos
+  numéricos, possuindo os metodos abaixo:
+
+    - 'parseInt()': Converte um valor númerico em inteiro.
+    - 'parseFloat()': Converte um valor númerico em real.
+
+    * É possível utilizar também apenas 'Number()' ao converter,
+    o que deixa aberto ao Javascrit optar pela melhor escolha
+    no momento da conversão.
+
+ Strings:
+
+  A Classe String pode ser usada para conversão de strings, sendo
+  possível utiliza-la diretamente: 'String()'.
+
+
+Propriedades e métodos do tipo String:
+
+  - 'length': Atributo que retorna número de caracteres de
+    uma string.
+
+  - 'toUpperCase()': Altera a string, jogando todos os caracters
+    alfabéticos para o maiúsculo.
+
+  - 'toLowerCase()': Altera a string, jogando todos os caracters
+    alfabéticos para o minúsculo.
+
+  - 'toLocaleString()': Localiza a string no contexto regional,
+    permitindo configurações de acordo com país ou nacionalidade
+    desejado.
+
+Propriedades e métodos do tipo Number:
+
+  - 'toFixed()': Altera as casas decimais do número, podendo ser
+    passando o número de casas desejadas.
+
+
+
