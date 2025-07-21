@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Fourth Code</title>
+    <style>
+        body {
+            font: normal 21px Arial;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with String Methods</h1>
+    <script>
+        var name = window.prompt('What is your name?');
+
+        /*
+            Using the method 'write' from document it is
+            possible to add text directly in the HTML
+            body, after the existente content there.
+        */
+
+        /*
+            The property 'length' returns the length of the
+            string (count of characters).
+        */
+        document.write(
+            `Your name has ${name.length} letters <br>`
+        );
+
+        /*
+            The method, 'toUpperCase()' formats the string to
+            upper case, while the method 'toLowerCase()'
+            formats the string to lower case.
+        */
+        document.write(
+            `Your name in uppercase is ${name.toUpperCase()} <br>`
+        );
+        document.write(
+            `Your name in lowercase is ${name.toLowerCase()} <br>`
+        );
+    </script>
+</body>
+</html>
