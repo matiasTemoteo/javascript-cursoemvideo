@@ -1,30 +1,4 @@
-Window:
-
- The main instance of the Web Page while being
- executed by Browser.
- 
- Some methods and properties from window:
-
-   - document: Inside window, we have the 'document',
-    that is the HTML document itself and by that,
-    it's possible to access many atributes and
-    methods to manipulate HTML and CSS.
-
-   - 'alert()': Open a alert panel in browser window,
-    interactable to users.
-
-   - 'confirm()': Open a confirmation panel, with
-     options, like 'ok' or 'cancel'.
-
-   - 'prompt()': Open a interactable panel with input
-     text field, when user can enter data.
-
-
- Some methods and properties from document:
-
-   - 'write()': Add a new line directly in the HTML body,
-   after the already existent content there.
-
+Javascript
 
 Variáveis em Javascript:
 
@@ -390,9 +364,95 @@ Condições:
 
  * if('condição) {
     'bloco de código' - Executado quando condição for true.
+
    } else {
     'bloco de código' - executado quando condição for false.
+
    }
    'fluxo normal do programa'.
 
+
+ Quando existe a necessidade de multiplas condições, ou seja
+ não apenas um condição para true e uma para false, mas também
+ uma terceira ou mais condições. Esse caso é chamado de condição
+ aninhada.
+
+ A estrutura aninhada ocorre dentro do else, como outros 'if' que
+ terão seus proprios requisitos condicionais para ser true ou false.
+
+ Exemplo:
+
+ * if ('condição') {
+    'bloco de código' - Executado quando condição for true.
+
+   } else {
+
+    if ('condição') {
+
+      'bloco de código' - Executado quando condição principal for
+      false, mas a condição do if atual for true.
+    }
+
+   }
+
+   'fluxo normal do programa'.
+
+
+ É possível declarar uma estrutura condicional aninhada sem precisar
+ criar um bloco dentro do else, para isso, existe a estrutura 'else if'.
+
+ Exemplo:
+
+ * if ('condição) {
+    'bloco de código' - Executado quando condição for true.
+  
+   } else if ('condição') {
+    'bloco de código' - Executado quando a primeira condição é false.
+
+   } else if ('condição') {
+    'block de código' - Executado quando a condição anterior é false.
+
+   } else {
+    'bloco de código' - Exectado quando nenhum condição for true.
+   }
+
+   'fluxo normal do programa'.
+
+ Existe uma outra estrutura condicional, usada principalmente para
+ trabalhar com condicionais fixas. Essa estrutura é o 'switch'.
+ Diferente do if/else-if/else vistos anteriormente, o switch é
+ declarado de maneira diferente. Onde será avaliada um valor e
+ será criada um bloco de código para trabalhar com as opções
+ possíveis para esse valor (opções fixas) ou também 'casos' possíveis.
+ 
+ Exemplo:
+
+ * switch(expressão) {
+    case 'valor1': 'código quando o valor for o caso 1'.
+
+    case 'valor2': 'código quando o valor for o caso 2'
+
+    default: 'código quando o valor não for nenhum dos casos'.
+ }
+ 
+ 'fluxo normal do programa'.
+
+
+ Para cada 'case' dentro do switch, é obrigatório o uso de
+ uma palavra reservada 'break', para encerrar o código do
+ case e sair da estrutura do switch.
+
+ Exemplo:
+
+ * switch(expressão) {
+    case 'valor1': 'código quando o valor for o caso 1'.
+    break;
+
+    case 'valor2': 'código quando o valor for o caso 2'
+    break;
+
+    default: 'código quando o valor não for nenhum dos casos'.
+ }
+ 
+ 'fluxo normal do programa'.
 
