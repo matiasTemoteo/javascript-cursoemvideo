@@ -39,7 +39,7 @@ Document Object Model (DOM)
          ...
 
 
- Acessando elementos da arvore DOM
+Acessando elementos da arvore DOM
 
   - 'getElementsByTagName()': Acessa elementos usando a tag-name
     como base. Retorna sempre uma lista de elementos.
@@ -100,8 +100,29 @@ Document Object Model (DOM)
        - 'window.document.querySelector("div.text");' - encontra
        e retorna todas as divs que possuam a classe 'text'.
 
+
+  - 'write()': Add a new line directly in the HTML body,
+     after the already existent content there.
+
+     
+  - document: Inside window, we have the 'document',
+    that is the HTML document itself and by that,
+    it's possible to access many atributes and
+    methods to manipulate HTML and CSS.
+
+   - 'alert()': Open a alert panel in browser window,
+    interactable to users.
+
+   - 'confirm()': Open a confirmation panel, with
+     options, like 'ok' or 'cancel'.
+
+   - 'prompt()': Open a interactable panel with input
+     text field, when user can enter data.
   
- Eventos
+  
+
+  
+Eventos do DOM
 
  In HTML, it is possible define a listener to an event directly
  in HTML elements, just declaring the atribute referenced of The
