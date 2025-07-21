@@ -150,4 +150,178 @@ Propriedades e métodos do tipo Number:
     passando o número de casas desejadas.
 
 
+Operadores:
 
+ - Aritméticos
+
+   - '+': Soma, traz o resultado de soma entre dois operandos.
+
+   - '-': Subtração, traz o resultado de soma entre dois operandos.
+
+   - '*': Multiplicação, traz o resultado de multiplicação entre
+     dois operandos.
+
+   - '/': Divisão, traz o resultado da divisão real entre dois
+     operandos.
+
+   - '%': Divisão inteira, traz o resto da visião inteira entre
+     dois operandos.
+
+   - '**': Potenciação, traz o resultado da potência entre dois
+     operandos (à esquerda do '**' a base e a direita o expoente).
+
+
+   * Todos os operadores aritméticos do Javascript são binários,
+     ou seja, trabalham com dois operandos.
+
+   * Ao criar sentenças matemáticas, é possível envolver blocos
+     artiméticos em '()' para indicar um calculo prioritário.
+
+   * Assim como na matemática, a ordem das operações dentro de um
+     sentença aritmética é dada seguindo uma ordem de precedência.
+     No caso do Javascript, a ordem de precedência é:
+
+       1 - '()';
+       2 - '**';
+       3 - '*', '/', '%';
+       4 - '+', '-';
+
+ - Atribuição
+
+   - '=': Atribuição de valor.
+
+   - Auto Atribuição:
+
+     Atribui à variável o valor resultante da operação/expressão
+     matemática seguinte tendo o valor atual da própria variável
+     como operando.
+
+     - '+=': Auto Soma.
+
+     - '-=': Auto Subtração.
+
+     - '*=': Auto multiplicação.
+
+     - '/=': Auto divisão.
+
+     - '**=': Auto potenciação.
+
+     - '%=': Auto divisão inteira (resto).
+
+   - Incremento/decremento:
+
+     Incrementa ou descresce o valor da variável em 1.
+
+     - '++': Incrementa 1 à variável.
+
+     - '--': Decrementa 1 à variável.
+
+     * Ao utilizar os operadores de incremento/decremento
+       antes da variável, a operação é realizada no exato
+       momento e já altera o valor na expressão corrente.
+       Enquanto ao utilizar os operadores depois da variável,
+       a operação é realizada após o termino da expressão
+       corrente.
+
+ - Relacionais
+
+   Retorna um valor lógico (boolean) resultante da comparação
+   entre dois valores númericos ou variáveis, seguindo sempre
+   da esquerda para a drireita.
+
+   - '>': Maior que.
+
+   - '<': Menor que.
+
+   - '>=': Maior que ou igual a.
+
+   - '<=': Menor que ou igual a.
+
+   - '==': Igual a (somente em valor).
+
+   - '===': Igual a (em valor e também em tipo).
+
+   - '!=': Diferente de (somente em valor).
+
+   - '!==': Diferente de (em valor e também em tipo).
+  
+
+   * É possível utilizar também operadores relacionais
+     em strings.
+
+   * O operador '===' também é conhecido como operador
+     de indentidade ou igualdade restrita, pois só retorna
+     true se os dois valores forem exatamente os mesmos, tanto
+     em valor quanto em tipo.
+     
+   * O operador '!==' também segue a mesma linha de raciocínio,
+     ele é chamado de diferença ou desigualdade restrita.
+
+   * Os operadores relacionais não possuem ordem de precedência
+     entre si, prevalenscendo a ordem da expressão, sempre da
+     esquerda para a direita.
+  
+   * Ao utilizar operadores relacionais juntamente com
+     operadores aritméticos, os aritméticos serão resolvidos
+     antes de haver a comparação.
+
+ - Lógicos
+
+   Operadores usados para trabalhar com valores lógicos (boolean).
+   Usados em expressões onde o resultado de comparações aritméticas
+   ou strings precisam ser comparadas com outros resultados lógicos.
+   Eses operadores comparam valores como 'true' e 'false' e retornam
+   da mesma forma, valores 'true' ou 'false'.
+
+   - '!': Negação ('Não' lógico - comparador unário)
+      Retorna true se o valor comparado for false e retorna 
+      false se o valor comparado for true.
+
+   - '&&': Conjunção ('E' lógico - comparador binário).
+     Retorna o resultado da comparação entre dois valores boolean,
+     sejam true ou false. Onde retornará true se ambos os valores
+     resultantes forem também true. E retornará false se apenas
+     um dos valores não for true.
+
+   - '||': Disjunção ('Ou' Lógico - comparador binário).
+     Retorna o resultado da comparação entre dois valores boolean,
+     sejam true ou false. Onde retornará true se apenas um dos
+     valores for true, mesmo que o otro seja false. E retornará
+     false, apenas quando ambos os valores são false.
+
+
+   * Ao utilizar os operadores lógicos, exite uma ordem de
+     precedência, da seguinte forma:
+
+     1 - '!';
+     2 - '&&';
+     3 - '||';
+
+   * Ao utilizar os operadores lógicos juntamente com operadores
+     relacionais, os operadores relacionais serão resolvidos antes
+     dos operadores lógicos.
+
+
+ - Ordem de precedência:
+
+   Em expressões onde são utilizados os operadores Artiméticos,
+   Relacionais e Lógicos, a ordem de precedência para a execussão
+   será a seguinte:
+
+   1 - Aritméticos.
+   2 - Relacionais.
+   3 - Lógicos.
+
+   * Sempre considerando  a ordem de precedência de cada operador
+     individualmente em suas famílias.
+
+ - Ternário
+
+   Expressão de teste lógico. Onde se pode definir um teste e
+   o valor a ser retornado em caso positivo (true) e o valor a
+   ser retornado em caso negativo (false).
+
+   - 'teste ? caso positivo (true) : caso negativo (false)'.
+
+   * Dentro da area de teste da expressão ternária, é possível
+     utilizar qualquer um dos operadores listados acima.
