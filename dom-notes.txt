@@ -1,7 +1,8 @@
 Document Object Model (DOM)
 
- Conjunto de objetos dentro do navegador, para acessar
- internamente os componentes de um website.
+ Conjunto de objetos dentro do navegador, funciona como
+ um facilitador para acessar internamente os componentes
+ de um website.
 
  Arvore DOM:
 
@@ -100,3 +101,16 @@ Document Object Model (DOM)
        e retorna todas as divs que possuam a classe 'text'.
 
   
+ Eventos
+
+  - 'mouseenter'
+
+  - 'mousemove'
+
+  - 'mousedown'
+
+  - 'onmouseup'
+
+  - 'click'
+
+  - 'onmouseout'
