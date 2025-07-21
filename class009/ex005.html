@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(40, 157, 196);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting studying with DOM</h1>
+    <p>
+        Result:
+    </p>
+    <p>
+        Learning <strong>DOM</strong> in Javascript.
+    </p>
+    <div id="msg">Click here!</div>
+    <div name="div-msg">Message on Javscript</div>
+    <div class="div-cls-msg">Message by class</div>
+    <br>
+    <div id="q-msg">Click here!</div>
+    <div name="q-div-msg">Message on Javscript</div>
+    <div class="q-div-cls-msg">Message by class</div>
+
+    <script>
+        
+        /*
+            It is possible to access elements of the DOM
+            using selectors in Javascript. The mais selectors
+            are:
+
+             - getElementsByTagName():
+               * Select elements by Tag name, like 'div', 'p', 'h1'.
+               * Returns a list of elements.
+
+             - getElementsByName():
+               * Select elements by name.
+               * Returns a unique element.
+
+             - getElementById():
+               * Select elements by id.
+               * Returns a unique element.
+
+             - getElementsByClassName():
+               * Select elements by class-name.
+               * Returns a list of elements.
+
+             - querySelector():
+               * Select elements using queries, like the CSS queries.
+               * Return a unique element.
+        */
+
+        var p1 = window.document.getElementsByTagName('p')[0];
+        p1.style.color = 'red';
+        window.alert(p1.innerHTML);
+
+        var body = window.document.body;
+        body.style.backgroundColor = 'green';
+
+        var d1Msg = window.document.getElementById('msg');
+        d1Msg.style.backgroundColor = 'black';
+        d1Msg.innerText += " i'm waiting...";
+
+        var nmMsg = window.document.getElementsByName('div-msg')[0];
+        nmMsg.innerHTML += ' Added by code';
+
+        var clsMsg = window.document
+            .getElementsByClassName('div-cls-msg')[0];
+
+        clsMsg.innerHTML = 'Adding message by javascript';
+
+        // query selector
+
+        var qDivMsg = window.document.querySelector('div#q-msg');
+        qDivMsg.innerText = 'Changed text using querySelector';
+
+        var qClsMsg = window.document.querySelector('div.q-div-cls-msg');
+        qClsMsg.innerHTML = 'Changed text using querySelector';
+
+
+    </script>
+</body>
+</html>
