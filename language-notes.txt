@@ -325,3 +325,36 @@ Operadores:
 
    * Dentro da area de teste da expressão ternária, é possível
      utilizar qualquer um dos operadores listados acima.
+
+
+Funções:
+
+ Bloco de código destacado do resto do código, onde é possível
+ criar uma lógica dedicada para algum processo específico.
+ 
+ As funções uma vez declaradas, podem ser acessadas em qualquer
+ parte do mesmo arquivo em que estão, respeitando o escopo corrente.
+
+ As funções podem usar argumentos externos para usar dentro do
+ seu código, que são passados no momento da chamada da função,
+ conhecidos como parametros.
+
+ Uma função pode executar o seu código e realizar suas alterações
+ dentro do seu proprio escopo e encerrar seu processo, ou pode
+ em dado momento, retornar algum dado ou resposta para quem a
+ chamou, o que é conhecido como retorno de função.
+
+ Declaração:
+
+   function action() {
+    'código interno da função'
+   };
+
+   function action2(param) {
+    'código interno da função'
+   }
+
+ Chamada:
+
+   action();
+   action2(5);
