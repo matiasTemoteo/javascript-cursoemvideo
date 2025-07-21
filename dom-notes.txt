@@ -103,14 +103,33 @@ Document Object Model (DOM)
   
  Eventos
 
-  - 'mouseenter'
+ In HTML, it is possible define a listener to an event directly
+ in HTML elements, just declaring the atribute referenced of The
+ respective event, Adding the term 'on' before the event name.
 
-  - 'mousemove'
+ These are some events:
 
-  - 'mousedown'
+  - 'mouseenter': Triggered when mouse enters in element area.
 
-  - 'onmouseup'
+  - 'mousemove': Triggered when mouse moves inside element area.
 
-  - 'click'
+  - 'mousedown': Triggered when mouse action button is pressed.
 
-  - 'onmouseout'
+  - 'onmouseup': Triggered when mouse action button is released.
+
+  - 'click': Triggered when mouse action click is actioned.
+
+  - 'onmouseout': Triggered when mouse exits the element area.
+
+  When delcaring in the HTML element, it would be:
+    - 'onmouseenter="handleEvent()"'.
+
+ IN Javscript, it is possible add listener to HTML elements, using
+ the method 'addEventListener()'. It requires the event name and
+ the function that will handle the event when it be triggered.
+
+ Examples:
+
+   - 'element.addEventListener("onmouseenter", "handleEvent()")'.
+
+
