@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de Exercício</title>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div id="input-line">
+                    <label for="">Número:</label>
+                    <input type="numver" name="num" id="iNum">
+                </div>
+                <div id="btn-line">
+                    <input type="button" value="Gerar Tabuada"
+                        onclick="generateTable()"
+                    >
+                </div>
+            </div>
+            <div id="output">
+                <select name="outputSel" id="iOutputSel"
+                    size="10"
+                >
+                    <option value="TypeNumber">Digite um número acima</option>
+                </select>
+            </div>
+            <div id="clear-section">
+                <input type="button" value="Limpar"
+                    onclick="clearAll()"
+                >
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>curoemvideo &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
