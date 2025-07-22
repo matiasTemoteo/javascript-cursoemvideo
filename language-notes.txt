@@ -456,3 +456,53 @@ Condições:
  
  'fluxo normal do programa'.
 
+
+Repetições (laços de repetição)
+
+ Estrutura que permite a execução de um bloco de código
+ em repetição, sendo possível definir o número de repetições
+ e as condicionais para que a repetição inicie, para que ela
+ termine e também de que forma as repetições serão encadeadas.
+
+ - A condição precisa ser sempre verdadeira (true) para que
+ a repetição se inicie. Ao iniciar, é executado o bloco de
+ código e após a execução, o js volta a ler novamente a condição
+ e seguir o mesmo processo enquanto a condição for verdadeira.
+ No momento que a condição é false, o bloco de código não é
+ executado e o js sai do loop e continua o código aoós a
+ estrutura de repetição.
+
+ - 'while()' - Estrutura de repetição em que executa o
+   bloco de código enquanto a condição for true.
+
+   Exemplo:
+
+     while(true) {
+      'bloco de código' - Executado pois a condição é true.
+     }
+
+     while(false) {
+      'bloco de código' - Não é executado pois a condição é false.
+     }
+
+  - 'do-while()' - esrutura de repetição em que executa uma
+    vez o bloco de código antes de checar a condição. Se a
+    condição for true, continua executando o bloco de código,
+    senão, sai do loop.
+
+    Exemplo:
+
+     do {
+      'bloco de código' - Executado uma vez antes de checar a
+       condição.
+     } while ('true); - Como a condição é true, volta para executar
+     novamente o bloco de cpodigo e então testar novamente a
+     condição.
+
+     do {
+      'bloco de código' - Executado uma vez antes de checar a
+       condição.
+     } while(false) - Como a condição é false, não volta para
+     executar o bloco de código e sai para o fluxo normal do
+     programa.
+     
