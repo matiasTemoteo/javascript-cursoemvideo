@@ -9,13 +9,13 @@ function load () {
     msg.innerText = `Now, there is ${hours} hrs.`;
 
     if (hours >= 0 && hours < 12) {
-        photo.src = '../images/morning.png';
+        photo.src = './images/morning.png';
         body.style.backgroundColor = '#e2cd9f';
     } else if (hours >= 12 && hours < 18) {
-        photo.src = '../images/afternoon.png';
+        photo.src = './images/afternoon.png';
         body.style.backgroundColor = '#b9846f';
     } else {
-        photo.src = '../images/night.png';
+        photo.src = './images/night.png';
         body.style.backgroundColor = '#515154';
     }
 }
