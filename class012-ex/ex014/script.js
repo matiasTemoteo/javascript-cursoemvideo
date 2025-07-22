@@ -8,6 +8,10 @@ function load () {
     var hours = date.getHours();
     msg.innerText = `Now, there is ${hours} hrs.`;
 
+    /*
+        Using js to modify html elements, adding styles
+        and changing atributes.
+    */
     if (hours >= 0 && hours < 12) {
         photo.src = './images/morning.png';
         body.style.backgroundColor = '#e2cd9f';

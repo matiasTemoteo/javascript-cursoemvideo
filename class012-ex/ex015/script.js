@@ -9,7 +9,15 @@ function verify() {
         window.alert('Please, lookup the data and try again!');
     } else {
         var sex = document.getElementsByName('radSex');
+        /*
+            Creating element directly via js.
+        */
         var img = document.createElement('img');
+
+        /*
+            Creating conditional tree to modify elements
+            base on different values and input data.
+        */
         img.setAttribute('id', 'photo');
         var age = year - Number(userYear.value);
         var gender = '';
@@ -37,6 +45,9 @@ function verify() {
             }
         }
 
+        /*
+            Manipulating html using js.
+        */
         outputTxt.innerHTML = `Age is ${age} as a ${gender}`;
         outputTxt.style.textAlign = 'center';
         outputTxt.style.padding = '15px 0px';
