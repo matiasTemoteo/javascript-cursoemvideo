@@ -506,3 +506,25 @@ Repetições (laços de repetição)
      executar o bloco de código e sai para o fluxo normal do
      programa.
      
+
+  - 'for' - Estrutura de repetição com inicialização e incremento
+    de variável automática. Nessa estrutura é necessário declarar
+    uma variável e inicializá-la, além de definir um incremento
+    para essa variável usando os operadores de atribuição.
+
+    Exemplo:
+
+     for(var i = 0; i < 6; i++) {
+      'bloco de código' - Será executado 6 vezes, sendo que o
+      valor de i começa com 0 (primeiro loop) e termina com 5
+      (último loop). Nesse caso a variável é incrementada em
+      1, a cada loop que passa.
+     }
+
+     for(var i = 2; i <= 8; i+=2) {
+      'bloco de código' - Será executado 6 vezes, sendo que o
+      valor de i começa com 2 (primeiro loop) e termina com 12
+      (último loop). Nesse caso a variável é incrementada em
+      2, a cada loop que passa.
+     }
+     
