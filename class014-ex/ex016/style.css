@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(162, 152, 253, 0.822);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 2px 2px 6px rgba(29, 29, 29, 0.5);
+    color: black;
+}
+
+#input-panel {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(175, 172, 255, 0.100);
+}
+
+#input-items {
+    display: grid;
+    grid-template: repeat(3, 35px) / 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.input-line input {
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.input-line input:focus-within {
+    outline: none;
+    border: 1px solid rgb(162, 152, 253);
+}
+
+#btn-items {
+    display: flex;
+    width: 60%;
+    margin: 25px auto;
+}
+
+#btn-items input {
+    padding: 2px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color .4s;
+}
+
+#btn-items input#btnCount {
+    background-color: rgba(68, 15, 68, 0.74);
+    color: white;
+}
+
+#btn-items input#btnCount:hover {
+    background-color: rgba(218, 191, 218, 0.74);
+    color: black;
+}
+
+#btn-items input#btnClear {
+    background-color: rgba(216, 172, 216, 0.74);
+}
+
+#btn-items input#btnClear:hover {
+    background-color: rgba(219, 110, 219, 0.74);
+    color: white;
+}
+
+
+#btn-items input {
+    flex: auto;
+    margin: 0 5px;
+}
+
+#output-panel {
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
+    justify-items: center;
+    align-items: center;
+
+    background-color: rgba(175, 172, 255, 0.100);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de Exercício</title>
+</head>
+<body>
+    <header>
+        <h1>Lets go Couting!</h1>
+    </header>
+    <main>
+        <section>
+            <div id="input-panel">
+                <div id="input-items">
+                    <div class="input-line">
+                        <label for="">Start:</label>
+                        <input type="number" name="start" id="istart">
+                    </div>
+                    <div class="input-line">
+                        <label for="">End:</label>
+                        <input type="number" name="end" id="iend">
+                    </div>
+                    <div class="input-line">
+                        <label for="">Step:</label>
+                        <input type="number" name="step" id="istep">
+                    </div>
+                </div>
+                <div id="btn-items">
+                    <input type="button" value="To Count"
+                        onclick="count()" id="btnCount"
+                    >
+                    <input type="button" value="clear"
+                        onclick="clearAll()" id="btnClear"
+                    >
+                </div>
+            </div>
+            <div id="output-panel">
+                <p id="output">Prepating the couting...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>curoemvideo &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
