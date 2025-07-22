@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Age Verificator</h1>
+    </header>
+    <main>
+        <section>
+            <div id="input-panel">
+                <div id="birthYear">
+                    <label for="txtYear">Birth Year:</label>
+                    <input type="number"
+                        name="txtYear" id="txtYear" min="0"
+                    >
+                </div>
+                <div id="gender">
+                    <input type="radio"
+                        name="radSex" id="mal" checked
+                    >
+                    <label for="mal">Male</label>
+                    <input type="radio"
+                        name="radSex" id="fem"
+                    >
+                    <label for="mal">Female</label>
+                </div>
+                <div id="action">
+                    <input type="button" id="verify"
+                        value="Verify" onclick="verify()"
+                    >
+                    <input type="button" id="clearAll"
+                        value="Clear" onclick="clearAll()"
+                    >
+                </div>
+            </div>
+            <div id="output">
+                <div id="output-text">Fill up the data above to have the results.</div>
+                <div id="output-img"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>curoemvideo &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(162, 152, 253, 0.822);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 2px 2px 6px rgba(29, 29, 29, 0.5);
+    color: black;
+}
+
+#input-panel {
+    width: 80%;
+    margin: auto;
+    height: 120px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+#input-panel #birthYear {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#input-panel #birthYear input {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+#input-panel #birthYear input:focus-within {
+    outline: none;
+    background-color: rgba(172, 162, 253, 0.122);
+}
+
+#input-panel #gender {
+    padding: 5px 0;
+    text-align: center;
+}
+
+#input-panel #gender input {
+    margin: 0 5px 0 15px;
+}
+
+#input-panel #action {
+    padding: 5px 0;
+    text-align: center;
+}
+
+#input-panel #action input {
+    padding: 2px 30px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#input-panel #action input:active {
+    opacity: 60%;
+}
+
+#input-panel #action #verify {
+    background-color: rgba(172, 162, 253, 0.822);
+}
+
+#output-text {
+    text-align: center;
+    padding-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
