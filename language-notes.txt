@@ -457,7 +457,7 @@ Condições:
  'fluxo normal do programa'.
 
 
-Repetições (laços de repetição)
+Repetições (laços de repetição):
 
  Estrutura que permite a execução de um bloco de código
  em repetição, sendo possível definir o número de repetições
@@ -515,16 +515,186 @@ Repetições (laços de repetição)
     Exemplo:
 
      for(var i = 0; i < 6; i++) {
+  
       'bloco de código' - Será executado 6 vezes, sendo que o
       valor de i começa com 0 (primeiro loop) e termina com 5
       (último loop). Nesse caso a variável é incrementada em
       1, a cada loop que passa.
+  
      }
 
      for(var i = 2; i <= 8; i+=2) {
+  
       'bloco de código' - Será executado 6 vezes, sendo que o
       valor de i começa com 2 (primeiro loop) e termina com 12
       (último loop). Nesse caso a variável é incrementada em
       2, a cada loop que passa.
+  
      }
+
+
+ - 'for in' - Estrutura semelhante ao 'for', porém otimizada
+   para a iteração dentro de Arrays e Objects. Diferente da
+   declarção padrão do 'for', essa estrutura terá apenas duas
+   partes: A variável declarada e inicializada e o Array ou
+   objeto a ser iterado. Uma vez sendo executado, para cada
+   loop, a variável criada conterá o índice de cada elemento
+   do array/object em sequência até que todos os índices tenham
+   sido percorridos.
+
+    Exemplos:
+
+     - Tendo o Array '[4, 5, 6]' nomeado como 'numbers'.
+
+     for(var pos in numbers) {
+      console.log('índice: ' + pos);
+
+      console.log('Valor: ' + numbers[pos]);
+     }
+
+     * As saídas do primeiro 'console.log()' executado dentro
+       do for serão: '0', '1' e '2' respectivamente.
+
+     * As saídas do segundo 'console.log()' executado dentro
+       do for serão: '4', '5' e '6';
      
+
+Arrays (Variáveis compostas):
+
+ Variáveis capazes de armazenar multiplos valores diferentes
+ ao mesmo tempo, organizados por índices. Uma variável
+ composta pode ser acessada atráves desse índice, que são
+ usados como identificadores.
+
+ Para determinar o identificador do valor da variável,
+ é necessário apenas, acessar a varável e colocar O
+ índice desejado entre '[]'.
+
+ Exemplos:
+
+   - 'var carro = ['valor1', 'valor2']';
+
+   - 'carro[0]'; - Retorna o valor 'valor1'.
+   - 'carro[1]'; - Retorna o valor 'valor2'.
+
+ 
+ É possível definir elementos no momento da declaração
+ do array, como feito acima (var carro = [1, 2, ...]).
+
+ Também é possível alterar elementos de um array já definido,
+ simplesmente atribuindo um valor a um dos índices do array.
+ 
+ Exemplos:
+
+   - 'var pessoas = ['pessoa1', 'pessoa2']';
+
+   - 'pessoas[0];' - Retorna o valor 'pessoa1'.
+   - 'pessoas[1];' - Retorna o valor 'pessoa2'.
+
+   - 'pessoas[1] = 'pessoaN'; - Alterar o valor do índice
+     '1' do array, substituindo 'pessoa2' por 'pessoaN'.
+
+   - 'pessoas[1];' - Retorna o valor 'pessoaN'.
+
+
+ Ao atribuir um valor para um índice não existente do array,
+ esse índice vai ser automáticamente criado e respectivo valor
+ vai ser atribuído a ele.
+
+ Exemplos:
+
+   - 'var motos = ['moto1', 'moto2']';'
+
+   - 'motos[2]' = 'moto3';' - Acrescenta o valor 'moto3' ao
+     array no índice '2' que foi também criado nesse momento.
+
+   * Nom fom o array fica da seguinte maneira:
+    ['moto1', 'moto2', 'moto3'].
+
+ Também é possível adicionar elementos no array usando o
+ método 'push()', que é um método nativo do próprio Js
+ que existe para todo array declarado. O método 'push()'
+ vai adicionar o elemento criando um novo índice após o
+ último índice existente no momento.
+
+ Exemplos:
+
+   - 'var casas = ['casa1', 'casa2', 'casa3'];'
+
+   - Valor atual de casas -> ['casa1', 'casa2', 'casa3'].
+
+   - 'casas.push('casa4');' - Adiciona o valor 'casa4' no
+     array 'casas', onde vai ocupar o índice '3'.
+
+   - Valor atual de casas ->
+     ['casa1', 'casa2', 'casa3', 'casa4'].
+
+ 
+ Os arrays possuem nativamente vários métodos e atributos
+ que ser chamados dentro do Javscript. Alguns exemplos são:
+
+   - 'length': Atributo que retorna o comprimento do array,
+     ou seja, quantos elementos existem dentro dele.
+
+   - 'sort()': Método que ordena os elementos dentro do array.
+     Tendo por padrão a ordenação tanto numérica quanto textual
+     por ordem crescente. Porém é possível ao utilizar o método
+     'sort()' passar como parâmetro uma função customizada, na qual
+     é possível criar deiversos tipos de ordenação de acordo com
+     a necessidade.
+
+      Exemplo:
+
+        - 'let nomes = [5, 4, 1, 7, 2];'
+
+        - De início, os valores estão na ordem acima, como
+          foram declarados.
+
+        - 'nomes.sort();'
+
+        - Depois de chamar o método 'sort()' no array, ele
+          será ordenado, e os valores serão dispostos da
+          seguinte maneira: [1, 2, 4, 5, 7].
+
+   - 'indexOf()': Método que busca dentro do array o valor
+     indicado dentro do parenteses. Uma vez encontrado, retornará
+     o índice do respectivo valor. Porém se o valor não foi
+     encontrado, ele retornará o valor '-1' que indica que não
+     foi encontrado.
+
+      Exemplo:
+
+       - 'let produtos = ['ovo', 'carne', 'arroz'];'
+
+       - 'produtos.indexOf('carne');' - Retorna o valor '1',
+         referente ao índice em que o valor 'carne' foi
+         encontrado dentro do array.
+
+       - 'produtos.indexOf('peixe');' - Retorna o valor '-1',
+         indicando que o valor 'peixe' não foi encontrado dentro
+         do array.
+
+
+ Os Arrays e os métodos de repetição sempre andam juntos, pois
+ ao acessar arrays e seus elementos, para variar de um elemento
+ a outro, é apenas necessário mudar o índice indicado no momento
+ de acessar o array. Usando métodos do array como 'length' é
+ possível criar estruturas de leitura e modificação de arrays
+ com pouco código e que permitem uma execução automatizada, mesmo
+ quando existe alterações no número de elementos do array.
+
+ Exemplos:
+
+   - 'let array = ['el1', 'el2', 'el3'];'
+
+   - for(let pos = 0; pos < array.length; pos++) {
+      console.log(
+        `Valor ${pos + 1} dentro Array: ${array[pos]}`
+      );
+     }
+
+     * Nesse exemplo, foi possível acessar todos os elementos
+       do array e imprimi-los em sequência, usando apenas
+       uma estrutura. Mesmo que o array tivesse mais items,
+       como usamos métodos que trazem informações automáticas
+       do array, o código continuaria funcionando.
