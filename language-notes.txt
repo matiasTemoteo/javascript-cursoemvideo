@@ -847,3 +847,50 @@ Arrays (Variáveis compostas):
        uma estrutura. Mesmo que o array tivesse mais items,
        como usamos métodos que trazem informações automáticas
        do array, o código continuaria funcionando.
+
+
+Objetos:
+
+ Estrutura de dados, semelhante ao array, porém onde é possível
+ armazenar dados com chave e valor e não sendo apenas uma lista
+ de dados controlada por índices. Nos objetos, os valores são
+ os dados em si e as chaves são os 'índices', porém sendo possível
+ utilizar números e strings como chave.
+
+ var objeto = { 'chave1': 'valor1', 'chave2': 'valor2' };
+
+ Os objetos podem conter diferentes tipos de dados, inclusive
+ funções e até arrays ou outros objetos.
+
+ Para referenciar um valor dentro de um objeto, é necessário
+ simplesmente usar o nome do bjeto seguido de '.' e o nome
+ da chave respectiva ao valor desejado.
+
+ var objeto = { 'chave1': 'valor1', chave2 : 'valor2'};
+ objeto.chave1; - Retorna o o valor 'valor1'.
+
+ Exemplos:
+
+   - let object = { name: 'jason', age: 18 };
+
+     object.name; - Retorna o valor 'jason'.
+     object.age; - Retorna o valor 18.
+
+   - let object = {
+      name: 'Albert',
+      weight: 80,
+      addWeight(w) {
+        this.weight += w;
+      }
+    };
+
+     object.name; - Retorna o valor 'Albert'.
+     object.weight; - Retorna o valor 80.
+
+     object.addWeight(10); - Chama a função 'addWeight()' que
+     foi declarada dentro do objeto, onde o seu código aumenta
+     o valor de 'weight'.
+
+     Após chamar a função 'addWeight()', o novo valor retorno
+     para a declaração 'object.weight;' será 90.
+
