@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(162, 152, 253, 0.822);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+input[type=button]:active {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.24);
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 2px 2px 6px rgba(29, 29, 29, 0.5);
+    color: black;
+}
+
+#input-panel {
+    padding: 5px 15px;
+    display: flex;
+}
+
+#input-line {
+    flex-basis: 84%;
+}
+
+#input-line input {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+
+#input-line input:focus-within {
+    outline: none;
+}
+
+#input-action {
+    flex-basis: 16%;
+}
+
+#input-action input {
+    padding: 1px 4px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#view-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+#view-panel select {
+    width: 200px;
+    border: 1px solib black;
+    border-radius: 4px;
+    padding: 4px 5px;
+    scrollbar-width: none;
+}
+
+#view-panel select:focus-within {
+    outline: none;
+}
+
+#end-action-panel {
+    margin: 15px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+#end-action-panel input {
+    padding: 4px 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#end-action-panel input:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+#output {
+    width: 70%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
