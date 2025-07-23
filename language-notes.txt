@@ -303,11 +303,17 @@ Operadores:
 
 Funções:
 
- Bloco de código destacado do resto do código, onde é possível
- criar uma lógica dedicada para algum processo específico.
+ Bloco de código destacado do resto do código principal, onde é
+ possível criar uma lógica dedicada para algum processo 
+ específico, de forma que o conjunto de código dentro da função
+ não é executado durante o fluxo normal do código que é linear.
  
  As funções uma vez declaradas, podem ser acessadas em qualquer
  parte do mesmo arquivo em que estão, respeitando o escopo corrente.
+ Somente quando forem explicitante chamadas é que o código contido
+ nelas será executado. A chamada da função pode cocorrer a partir
+ de uma declaração direta, dentro de algum bloco de código ou
+ a partir de eventos (como os eventos do DOM).
 
  As funções podem usar argumentos externos para usar dentro do
  seu código, que são passados no momento da chamada da função,
@@ -330,9 +336,152 @@ Funções:
 
  Chamada:
 
-   action();
-   action2(5);
+   action(); - Chamada da função sem parametros
+   action2(5); - Chamada da função com parametro
 
+
+ Retorno:
+
+   function action(value) {
+    'código interno da função'
+    return 'valor de retorto';
+   }
+
+   action(1); - Chamada da função, passando parametro. A função
+    retorna o valor 'valor de retorno' pois essa função possui
+    uma declaração de retorno.
+
+    * Uma função pode ter declaros multiplas opções de retorno,
+    porém apenas um deles pode ser efetivamente executado. Uma
+    vez que o a função executa um dos retornos, o escopo volta
+    para o código que chamou a função e qualquer outro retorno
+    não é mais possível.
+
+
+ Parametros:
+
+   function action(param1, param2) {
+    'código interno da função'
+    return 'valor de retorno';
+   }
+
+   action(1, 2); - Chamada da função, passando dois parametros.
+   Os valores passados na chamada da função serão recebidos na
+   ordem em que foram dispostos na chamada, por isso é importante
+   conhecer a ordem dos parametros para não que não sejam recebidos
+   em ordem errada dentro da função. A função retorna o valor 'valor 
+   de retorno' pois essa função possui uma declaração de retorno.
+
+   function action(param1=4, param2=5) {
+    'código interno da função'
+    return 'valor de retorno';
+   }
+
+   action(1); - chamada da função, passando apenas um parametro,
+   sendo que a função possui dois parametros. Nesse caso, o valor
+   do parametro dois quando não passado vai ser de '5'.
+
+   * Ao inicializar o parametro na declaração da função, ele pode
+   assumir esse valor caso não seja informado durante a chamda.
+
+   * Uma função pode possuir nenhum ou n parametros.
+
+  
+ Exemplos:
+
+   - function tarefa1() {
+        console.log('Executando Tarefa 1');
+     }
+
+     'tarefa1();' - Chama a função 'tarefa1()'. A função executa
+     o seu código interno e então o fluxo do código volta para a
+     chamada da função, sem retornos.
+
+
+   - function parouimpar(n) {
+        if (n%2==0) {
+          return 'par';
+        } else {
+          return 'ímpar';
+        }
+     }
+
+     'parouimpar(2);' - Chama a função 'parouimpar()' e passa como
+     parametro o valor '2'. A função executa o seu código interno
+     e então retorna envia o retorno para quem a chamou, nesse
+     caso o retorno é o valor 'par'.
+
+     'parouimpar(3);' - Chama a função 'parouimpar' e passa como
+     parametro o valor '3'. A função executa o seu código interno
+     e então retorna envia o retorno para quem a chamou, nesse
+     caso o retorno é o valor 'ímpar'.
+
+
+ Chamando funções dentro de funções:
+
+   É possível chamar outras funções dentro de uma função, sendo
+   deito a chamada da mesma forma que ocorreria no fluxo normal
+   externo as funções.
+
+   function action() {
+    'cóigo da função'
+   }
+
+   funtion handler() {
+    'código da função'
+    action(); - Chamada de outra função
+   }
+
+   Exemplo:
+
+     - function parouimpar(number) {
+        if (number % 2 == 0) {
+          return 'par';
+        } else {
+          return 'ímpar';
+        }
+      }
+
+      function validanumero(num) {
+        let numeroe = parouimpar(num);
+        console.log('O número ' + num + ' é ' + numeroe);
+      }
+
+ Recursividade:
+
+   Quando chamamos a propria função dentro dela mesma, damos o
+   nome de recursividade. É uma técnica útil quando é necessário
+   utilizar o resultado da função em sequência e repetir assim
+   o processo.
+
+   function action(n1) {
+    'código da função'
+    action(2); - Chamada recursiva.
+   }
+
+   Exemplo:
+
+     - function fatorial(num) {
+          if (num == 1) {
+            return 1;
+          } else {
+            return num * fatorial(num - 1);
+          }
+       }
+
+       fatorial(5); - Retorna o fatorial de 5 (120).
+       
+       Nesse caso a função quando receber um número diferente 
+       de 1, multiplica ele pelo resultado da chamada da propria 
+       função pasando o número -1, assim a multiplicação será feita 
+       entre o número  recebido e o fatorial do anterio a ele. No 
+       exmeplo o número recebido inicialmente é o 5, dentro da
+       função é chmada a função recursivamente passando sempre o 
+       atual valor - 1 e multiplicando ele pelo valor anterior até 
+       que o valor seja 1 terminando assim a finção e retorno o 
+       fatorial do número inicialmente indicado.
+
+       
 
 Condições:
 
